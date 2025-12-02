@@ -1,6 +1,6 @@
 public class Personaje {
     private String nom;
-    private int dinero;
+    public static int dinero;
 
     public Personaje(String nom, int dinero) {
         this.nom = nom;
@@ -14,5 +14,8 @@ public class Personaje {
     public static void main(String[] args) {
         Personaje jugador = new Personaje("Trevor", 500);
         jugador.mostrarInfo();
+        GastarDinero.gastarDinero();
     }
+
+
 }
